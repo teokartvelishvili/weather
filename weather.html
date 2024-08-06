@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/weather_page_sun.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <header id="header"> 
+        <div id="header_left">
+            <img  id="header_icon"src="./img/weather_icon.png">
+            <p>Weather in Georgia</p>
+        </div>
+        <div id="header_right">
+            <a href="https://teona-kartvelishvili.vercel.app/">
+              Go Back > > > <img id="logoTK" src="./img/teo logo dark backgr.png" alt="">
+            </a>
+        </div>
+    </header>
+    <section id="section">
+        <article class="section_items" id="location_condition">
+            <div id="location_condition_upper">
+                <img src="./img/weather_page_sun.png">
+                <div>
+                    <h2 id="location"></h2>
+                    <p id="day"></p>
+                </div>
+            </div>
+            <div id="location_condition_middle">
+                <h1 id="celsius_number"></h1>
+                <p id="description"></p>
+            </div>
+            <div id="location_condition_lower">
+                <div class="data_items">
+                    <div class="weather_data" id="visibility_data">
+                        <div>
+                            <img src="./img/weather_visibility_icon.png">
+                            <p >Visibility</p>
+                        </div>
+                        <div>
+                            <p id="visibilityNumber"></p>
+                        </div>
+                    </div>
+                    <div class="weather_data" id="feels_like">
+                        <div>
+                            <img src="./img/weather_temperature_icon.png">
+                            <p>Feels like</p>
+                        </div>
+                        <div>
+                            <p id="FeelsLikeNumber"></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="data_items">
+                        <div class="weather_data">
+                            <div>
+                                <img src="./img/weather_humidity_icon.png">
+                                <p>Humidity</p>
+                            </div>
+                            <div>
+                                <p id="humidityNumber"></p>
+                            </div>
+                        </div>
+                        <div class="weather_data" id="wind_data">
+                            <div>
+                                <img src="./img/weather_wind_icon.png">
+                                <p>Wind</p>
+                            </div>
+                            <div>
+                                <p id="windNumber"></p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </article>
+        <article class="section_items article2"  id="add_location">
+            <button id="add_button" type="button">
+                <img src="./img/weather_add_button_plus.png">
+            </button>
+            <label for="add_button" id="add_location_label">Add new location</label>
+            <div class="select" id="options">
+                <select value="tbilisi" id="city"> 
+                    <option value="tbilisi" selected>tbilisi</option>
+                    <option value="abastumani">abastumani</option>
+                    <option value="kutaisi">kutaisi</option>
+                    <option value="batumi">batumi</option>
+                    <option value="bakuriani">bakuriani</option>
+                    <option value="zugdidi">zugdidi</option>
+                    <option value="ozurgeti">ozurgeti</option>
+                    <option value="kobuleti">kobuleti</option>
+                    <option value="gori">gori</option>
+                    <option value="telavi">telavi</option>
+                    <option value="senaki">senaki</option>
+                    <option value="samtredia">samtredia</option>
+                    <option value="akhaltsikhe">akhaltsikhe</option>
+                    <option value="mestia">mestia</option>
+                    <option value="gurjaani">gurjaani</option>
+                    <option value="khashuri">khashuri</option>
+                    <option value="chokhatauri">chokhatauri</option>
+                    <option value="borjomi">borjomi</option>
+                    <option value="sagarejo">sagarejo</option>
+                    <option value="lagodekhi">lagodekhi</option>
+                    <option value="tianeti">tianeti</option>
+                    <option value="kharagauli">kharagauliი</option>
+                    <option value="tskhinvali">tskhinvali</option>
+                    <option value="rustavi">rustavi</option>
+                    <option value="ureki">ureki</option>
+                    <option value="surami">surami</option>
+                    <option value="poti">poti</option>
+                    <option value="oni">oni</option>
+                    <option value="shekvetili">shekvetili</option>
+                    <option value="marneuli">marneuli</option>
+                    <option value="bolnisi">bolnisi</option>
+                    <option value="manglisi">manglisi</option>
+                    <option value="mtskheta">mtskheta</option>
+                    <option value="gonio">gonio</option>
+                    <option value="shovi">shovi</option>
+                    <option value="tsinandali">tsinandali</option>
+                    <option value="khobi">khobi</option>
+                    <option value="tskneti">tskneti</option>
+                    <option value="sioni">sioni</option>
+                    <option value="sukhumi">sukhumi</option>
+                    <option value="omalo">omalo</option>
+                    <option value="martvili">martvili</option>
+                    <option value="khoni">khoni</option>
+                    <option value="adigeni">adigeni</option>
+                </select>
+            </div>
+        </article>
+    </section>
+
+    <footer>Made with <img src="./img/weather_heart_icon.png"> by Teona Kartvelishvili</footer>
+
+    <script src="weather.js"></script>
+</body>
+</html>
